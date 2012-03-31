@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Follow Links Download</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="lib/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript">
+
+var bgPage = chrome.extension.getBackgroundPage();
+
+
+function onLoad() {	
+    // bgPage.google.accounts.user.login(bgPage.Contacts.scope);
+}	
+$(window).unload(function() { });
+
+
+</script>
+</head>
+
+<body onLoad="onLoad()">
+	
+    <div id="content">
+    
+    	<img src="images/icon58.png" id="icon" />
+    
+        <div id="dataContainer">
+       		<ul id="data" />      
+        </div>
+       
+    </div>
+    
+</body>
