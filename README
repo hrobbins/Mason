@@ -1,0 +1,19 @@
+
+@hmason: I need a plugin that can highlight people's names on a web page if I've e-mailed/tweeted with them before. #hacktobe
+
+What you see here is a basic proof-of-concept.
+
+1. Downloading mason.crx in Chrome should install.
+    - alternatively, you can download the project and load it as an unpacked extension in dev mode
+2. One installed, it should pop-up a window/tab for Oauth to the Google contact data feed
+3. Once you've granted access, it will load your contects every time the browser is started.
+
+Any page you see from there on out will give any names from your contact list a hideous yellow highlight.
+For a good test is to go to Linked-In, or Facebook.
+
+Potential Improvements:
+    * Add Twitter, etc
+    * Change how names are highlighted.
+    * On MouseOver: Show user avatar thumbnails.
+    * OnClick Jump to the user profile, or an inbox search for that contact to refresh your memory.
+
