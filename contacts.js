@@ -1,5 +1,5 @@
 // TODO:
-//  * handle the case where user has more than the max-results contacts
+//  * Handle the case where user has more than the max-results contacts
 
 /*
 // Using: http://code.google.com/chrome/extensions/tut_oauth.html
@@ -10,7 +10,7 @@
 // might be possible to re-jigger it to use the tab popup and local storage for the auth data method used below
 */
 
-// use this method to avoid errors of value of 'X' not available for 'undefined'
+// Use this method to avoid errors of value of 'X' not available for 'undefined'
 var objval = function (o, path) {
             for (var p in path) {
                 var attr = path[p];
@@ -56,7 +56,6 @@ var Contacts = {
                             contact.name.full = objval(t, ['gd$name','gd$fullName','$t']);
                             contact.name.given = objval(t, ['gd$name','gd$givenName','$t']);
                             contact.name.family = objval(t, ['gd$name','gd$familyName','$t']);
-                            // console.log("Name: " + JSON.stringify(t['gd$name'])); 
                             console.log("Name: " + JSON.stringify(contact)); 
 
                             // TODO: Currently two contacts with the same name will clobber each other
@@ -66,8 +65,6 @@ var Contacts = {
                 for (var n in Contacts.contacts) {
                     Contacts.contactNames.push(n);
                 }
-                // console.log(JSON.stringify(resp));
-                // console.log(JSON.stringify(xhr));
             };
 
 	        // Send: POST https://docs.google.com/feeds/default/private/full?alt=json

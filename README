@@ -9,7 +9,9 @@ What you see here is a basic proof-of-concept.
 2. One installed it should pop-up a window for Oauth on the Google contact data feed.
 3. Once you've granted access it will load your contacts every time the browser is started.
 
-Any page you see from there on out will give any names from your contact list a hideous yellow highlight.  For a good test is to go to Linked-In, or Facebook.
+Any page you see from there on out will give any names from your contact list a yellow highlight.  For a good test is to go to Linked-In, or Facebook.
+
+You can also open the Chrome dev console to see what's going on behind the scenes.
 
 Future Improvements:
     * Add Twitter, etc
